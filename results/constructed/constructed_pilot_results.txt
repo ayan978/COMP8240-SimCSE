@@ -1,0 +1,23 @@
+/workspaces/SimCSE/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Device: cpu
+Pairs: 80
+
+===== Constructed Pilot Results =====
+Pairs: 80
+Spearman: 0.1012
+Pearson:  0.2739
+
+Average SimCSE cosine by category:
+category
+high_lexical_overlap_different_meaning    0.9847
+causal_relation_reversal                  0.9826
+paraphrase                                0.9492
+synonym_substitution                      0.9310
+named_entity_substitution                 0.7704
+number_date_substitution                  0.7281
+negation                                  0.6838
+antonym_substitution                      0.6526
+Name: simcse_cosine, dtype: float32
+
+Saved predictions to: data/constructed/constructed_pilot_predictions.csv

@@ -35,3 +35,6 @@ env/
 # Raw third-party datasets
 data/zhao_hu/raw/
 data/original/
+
+# Local copies of third-party Zhao & Hu data
+data/zhao_hu/local/

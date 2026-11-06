@@ -1,0 +1,27 @@
+
+===== Category Summary =====
+                                        pairs  ...  mean_overestimate_gap
+category                                       ...                       
+high_lexical_overlap_different_meaning     10  ...                 0.5147
+causal_relation_reversal                   10  ...                 0.5626
+paraphrase                                 10  ...                -0.0008
+synonym_substitution                       10  ...                -0.0090
+named_entity_substitution                  10  ...                 0.0704
+number_date_substitution                   10  ...                 0.0681
+negation                                   10  ...                 0.2838
+antonym_substitution                       10  ...                 0.1726
+
+[8 rows x 4 columns]
+
+===== Top 10 SimCSE Overestimation Examples =====
+ pair_id                                       sentence1                                    sentence2                               category  human_similarity_score  simcse_cosine  overestimate_gap
+      61                           Rain caused flooding.                        Flooding caused rain.               causal_relation_reversal                     2.0       0.997702          0.597702
+      67     The software bug caused the system failure.  The system failure caused the software bug.               causal_relation_reversal                     2.0       0.997283          0.597283
+      66           The collision caused road congestion.        Road congestion caused the collision.               causal_relation_reversal                     2.0       0.992824          0.592824
+      64          The fire caused the alarm to activate.       The alarm caused the fire to activate.               causal_relation_reversal                     2.0       0.992373          0.592373
+      62              The storm caused the power outage.           The power outage caused the storm.               causal_relation_reversal                     2.0       0.991123          0.591123
+      79               The company acquired the startup.            The startup acquired the company. high_lexical_overlap_different_meaning                     2.0       0.990625          0.590625
+      78                              Tom defeated Jack.                           Jack defeated Tom. high_lexical_overlap_different_meaning                     2.0       0.988993          0.588993
+      63          Smoking increases the risk of disease.       Disease increases the risk of smoking.               causal_relation_reversal                     2.0       0.984042          0.584042
+      68 The earthquake caused the building to collapse. The building collapse caused the earthquake.               causal_relation_reversal                     2.0       0.977064          0.577064
+      75                  The police arrested the thief.               The thief arrested the police. high_lexical_overlap_different_meaning                     2.0       0.960719          0.560719

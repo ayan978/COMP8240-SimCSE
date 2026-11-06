@@ -1,0 +1,57 @@
+/workspaces/SimCSE/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Device: cpu
+Pairs: 2998
+Processed 64/2998
+Processed 128/2998
+Processed 192/2998
+Processed 256/2998
+Processed 320/2998
+Processed 384/2998
+Processed 448/2998
+Processed 512/2998
+Processed 576/2998
+Processed 640/2998
+Processed 704/2998
+Processed 768/2998
+Processed 832/2998
+Processed 896/2998
+Processed 960/2998
+Processed 1024/2998
+Processed 1088/2998
+Processed 1152/2998
+Processed 1216/2998
+Processed 1280/2998
+Processed 1344/2998
+Processed 1408/2998
+Processed 1472/2998
+Processed 1536/2998
+Processed 1600/2998
+Processed 1664/2998
+Processed 1728/2998
+Processed 1792/2998
+Processed 1856/2998
+Processed 1920/2998
+Processed 1984/2998
+Processed 2048/2998
+Processed 2112/2998
+Processed 2176/2998
+Processed 2240/2998
+Processed 2304/2998
+Processed 2368/2998
+Processed 2432/2998
+Processed 2496/2998
+Processed 2560/2998
+Processed 2624/2998
+Processed 2688/2998
+Processed 2752/2998
+Processed 2816/2998
+Processed 2880/2998
+Processed 2944/2998
+Processed 2998/2998
+
+===== Zhao & Hu Dev Results =====
+Pairs: 2998
+Spearman: 0.6008
+Pearson:  0.6759
+Saved predictions to: data/zhao_hu/zhao_hu_dev_predictions.csv

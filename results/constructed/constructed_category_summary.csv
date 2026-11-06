@@ -1,0 +1,9 @@
+category,pairs,mean_human_score,mean_simcse_cosine,mean_overestimate_gap
+high_lexical_overlap_different_meaning,10,2.35,0.9847,0.5147
+causal_relation_reversal,10,2.1,0.9826,0.5626
+paraphrase,10,4.75,0.9492,-0.0008
+synonym_substitution,10,4.7,0.931,-0.009
+named_entity_substitution,10,3.5,0.7704,0.0704
+number_date_substitution,10,3.3,0.7281,0.0681
+negation,10,2.0,0.6838,0.2838
+antonym_substitution,10,2.4,0.6526,0.1726

@@ -1,0 +1,102 @@
+2026-10-08 08:10:28,543 : Starting new HTTPS connection (1): huggingface.co:443
+2026-10-08 08:10:28,923 : https://huggingface.co:443 "HEAD /princeton-nlp/sup-simcse-bert-base-uncased/resolve/main/config.json HTTP/1.1" 307 0
+2026-10-08 08:10:28,932 : https://huggingface.co:443 "HEAD /api/resolve-cache/models/princeton-nlp/sup-simcse-bert-base-uncased/2d82fab19ac3a73a20dd20333d27eb8a52d6e97f/config.json HTTP/1.1" 200 0
+2026-10-08 08:10:30,218 : https://huggingface.co:443 "HEAD /princeton-nlp/sup-simcse-bert-base-uncased/resolve/main/model.safetensors HTTP/1.1" 404 0
+2026-10-08 08:10:36,920 : https://huggingface.co:443 "HEAD /princeton-nlp/sup-simcse-bert-base-uncased/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2026-10-08 08:10:36,930 : https://huggingface.co:443 "HEAD /api/resolve-cache/models/princeton-nlp/sup-simcse-bert-base-uncased/2d82fab19ac3a73a20dd20333d27eb8a52d6e97f/tokenizer_config.json HTTP/1.1" 200 0
+/workspaces/SimCSE/.venv/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+2026-10-08 08:10:37,113 : ***** Transfer task : STS12 *****
+
+
+2026-10-08 08:13:35,011 : MSRpar : pearson = 0.6199, spearman = 0.6253
+2026-10-08 08:14:18,787 : MSRvid : pearson = 0.9261, spearman = 0.9294
+2026-10-08 08:15:01,752 : SMTeuroparl : pearson = 0.4987, spearman = 0.5878
+2026-10-08 08:16:24,527 : surprise.OnWN : pearson = 0.7662, spearman = 0.6992
+2026-10-08 08:17:06,018 : surprise.SMTnews : pearson = 0.7292, spearman = 0.6100
+2026-10-08 08:17:06,020 : ALL : Pearson = 0.8438,             Spearman = 0.7530
+2026-10-08 08:17:06,020 : ALL (weighted average) : Pearson = 0.7252,             Spearman = 0.7090
+2026-10-08 08:17:06,020 : ALL (average) : Pearson = 0.7080,             Spearman = 0.6903
+
+2026-10-08 08:17:06,022 : ***** Transfer task : STS13 (-SMT) *****
+
+
+2026-10-08 08:17:48,508 : FNWN : pearson = 0.6293, spearman = 0.6379
+2026-10-08 08:18:40,123 : headlines : pearson = 0.8011, spearman = 0.8231
+2026-10-08 08:19:20,344 : OnWN : pearson = 0.8772, spearman = 0.8635
+2026-10-08 08:19:20,346 : ALL : Pearson = 0.8306,             Spearman = 0.8467
+2026-10-08 08:19:20,346 : ALL (weighted average) : Pearson = 0.8079,             Spearman = 0.8149
+2026-10-08 08:19:20,346 : ALL (average) : Pearson = 0.7692,             Spearman = 0.7748
+
+2026-10-08 08:19:20,347 : ***** Transfer task : STS14 *****
+
+
+2026-10-08 08:20:01,188 : deft-forum : pearson = 0.6477, spearman = 0.6436
+2026-10-08 08:20:52,003 : deft-news : pearson = 0.8242, spearman = 0.8096
+2026-10-08 08:21:53,668 : headlines : pearson = 0.7931, spearman = 0.7909
+2026-10-08 08:22:51,902 : images : pearson = 0.8937, spearman = 0.8658
+2026-10-08 08:23:53,808 : OnWN : pearson = 0.8949, spearman = 0.8752
+2026-10-08 08:25:20,779 : tweet-news : pearson = 0.8357, spearman = 0.7677
+2026-10-08 08:25:20,782 : ALL : Pearson = 0.8251,             Spearman = 0.8019
+2026-10-08 08:25:20,782 : ALL (weighted average) : Pearson = 0.8271,             Spearman = 0.8019
+2026-10-08 08:25:20,782 : ALL (average) : Pearson = 0.8149,             Spearman = 0.7921
+
+2026-10-08 08:25:20,785 : ***** Transfer task : STS15 *****
+
+
+2026-10-08 08:26:23,289 : answers-forums : pearson = 0.7454, spearman = 0.7464
+2026-10-08 08:27:21,144 : answers-students : pearson = 0.7442, spearman = 0.7512
+2026-10-08 08:28:26,985 : belief : pearson = 0.8519, spearman = 0.8722
+2026-10-08 08:29:32,205 : headlines : pearson = 0.8209, spearman = 0.8539
+2026-10-08 08:30:32,395 : images : pearson = 0.9273, spearman = 0.9372
+2026-10-08 08:30:32,397 : ALL : Pearson = 0.8428,             Spearman = 0.8540
+2026-10-08 08:30:32,397 : ALL (weighted average) : Pearson = 0.8227,             Spearman = 0.8379
+2026-10-08 08:30:32,398 : ALL (average) : Pearson = 0.8179,             Spearman = 0.8322
+
+2026-10-08 08:30:32,400 : ***** Transfer task : STS16 *****
+
+
+2026-10-08 08:30:58,016 : answer-answer : pearson = 0.7629, spearman = 0.7651
+2026-10-08 08:31:16,486 : headlines : pearson = 0.7947, spearman = 0.8354
+2026-10-08 08:31:41,398 : plagiarism : pearson = 0.8431, spearman = 0.8652
+2026-10-08 08:32:27,553 : postediting : pearson = 0.8448, spearman = 0.8863
+2026-10-08 08:32:44,129 : question-question : pearson = 0.7289, spearman = 0.7348
+2026-10-08 08:32:44,130 : ALL : Pearson = 0.7821,             Spearman = 0.8082
+2026-10-08 08:32:44,130 : ALL (weighted average) : Pearson = 0.7960,             Spearman = 0.8189
+2026-10-08 08:32:44,130 : ALL (average) : Pearson = 0.7949,             Spearman = 0.8174
+
+2026-10-08 08:32:44,132 : 
+
+***** Transfer task : STSBenchmark*****
+
+
+2026-10-08 08:44:01,282 : train : pearson = 0.8365, spearman = 0.8330
+2026-10-08 08:47:18,921 : dev : pearson = 0.8569, spearman = 0.8619
+2026-10-08 08:50:03,923 : test : pearson = 0.8328, spearman = 0.8426
+2026-10-08 08:50:03,927 : ALL : Pearson = 0.8401,             Spearman = 0.8413
+2026-10-08 08:50:03,928 : ALL (weighted average) : Pearson = 0.8394,             Spearman = 0.8396
+2026-10-08 08:50:03,928 : ALL (average) : Pearson = 0.8421,             Spearman = 0.8458
+
+2026-10-08 08:50:03,934 : 
+
+***** Transfer task : SICKRelatedness*****
+
+
+2026-10-08 08:56:41,945 : train : pearson = 0.8583, spearman = 0.8099
+2026-10-08 08:57:33,576 : dev : pearson = 0.8519, spearman = 0.8256
+2026-10-08 09:04:49,692 : test : pearson = 0.8512, spearman = 0.8039
+2026-10-08 09:04:49,696 : ALL : Pearson = 0.8546,             Spearman = 0.8077
+2026-10-08 09:04:49,696 : ALL (weighted average) : Pearson = 0.8545,             Spearman = 0.8077
+2026-10-08 09:04:49,697 : ALL (average) : Pearson = 0.8538,             Spearman = 0.8131
+
+------ test ------
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| STS12 | STS13 | STS14 | STS15 | STS16 | STSBenchmark | SICKRelatedness |  Avg. |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| 75.30 | 84.67 | 80.19 | 85.40 | 80.82 |    84.26     |      80.39      | 81.58 |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
++------+------+------+------+------+------+------+------+
+|  MR  |  CR  | SUBJ | MPQA | SST2 | TREC | MRPC | Avg. |
++------+------+------+------+------+------+------+------+
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
++------+------+------+------+------+------+------+------+

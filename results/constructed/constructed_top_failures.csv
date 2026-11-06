@@ -1,0 +1,11 @@
+pair_id,sentence1,sentence2,category,human_similarity_score,simcse_cosine,overestimate_gap
+61,Rain caused flooding.,Flooding caused rain.,causal_relation_reversal,2.0,0.99770164,0.5977016399999999
+67,The software bug caused the system failure.,The system failure caused the software bug.,causal_relation_reversal,2.0,0.9972828,0.5972828
+66,The collision caused road congestion.,Road congestion caused the collision.,causal_relation_reversal,2.0,0.99282396,0.5928239599999999
+64,The fire caused the alarm to activate.,The alarm caused the fire to activate.,causal_relation_reversal,2.0,0.9923728,0.5923728
+62,The storm caused the power outage.,The power outage caused the storm.,causal_relation_reversal,2.0,0.9911226,0.5911225999999999
+79,The company acquired the startup.,The startup acquired the company.,high_lexical_overlap_different_meaning,2.0,0.99062467,0.59062467
+78,Tom defeated Jack.,Jack defeated Tom.,high_lexical_overlap_different_meaning,2.0,0.9889935,0.5889935
+63,Smoking increases the risk of disease.,Disease increases the risk of smoking.,causal_relation_reversal,2.0,0.9840423,0.5840423
+68,The earthquake caused the building to collapse.,The building collapse caused the earthquake.,causal_relation_reversal,2.0,0.9770638,0.5770638
+75,The police arrested the thief.,The thief arrested the police.,high_lexical_overlap_different_meaning,2.0,0.96071935,0.56071935
