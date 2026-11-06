@@ -1,0 +1,4 @@
+example_type,sentence1,sentence2,human_score
+High similarity,"""We hope all parties will continue to make efforts and continue the process of dialogue,"" the Chinese Foreign Ministry said in a statement.","China's foreign ministry said: ""We hope all parties will continue to make efforts and continue the process of dialogue.""",1.0
+Medium similarity,A monkey is karate kicking a person.,A monkey pratices martial arts.,0.5
+Low similarity,"""What I am really looking for is an estimation of the Muslim population..."" @ThanosK and @T.E.D., an overall, general population estimation f.e.",The following is taken from my dog-eared copy of the New Penguin Atlas of Medieval History.,0.0

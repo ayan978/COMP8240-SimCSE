@@ -1,0 +1,7 @@
+pair_id,category,sentence1,sentence2,gemini_score,simcse_cosine
+1,paraphrase,The boy is riding a bicycle.,A boy is cycling.,5.0,0.92280245
+11,synonym_substitution,The movie was very good.,The movie was very enjoyable.,4.5,0.9442249
+21,negation,The train arrived on time.,The train did not arrive on time.,0.0,0.7637645
+51,antonym_substitution,The water is hot.,The water is cold.,0.0,0.75759387
+61,causal_relation_reversal,Rain caused flooding.,Flooding caused rain.,2.0,0.99770164
+71,high_lexical_overlap_different_meaning,The dog chased the cat.,The cat chased the dog.,1.5,0.9882392

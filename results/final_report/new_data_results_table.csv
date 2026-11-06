@@ -1,0 +1,3 @@
+dataset,n,reference,spearman,pearson
+Zhao & Hu cleaned dev,2998,human similarity score,0.6008,0.6759
+Controlled diagnostic dataset,400,Gemini 3.5 Flash-Lite score,0.3924007693313687,0.4900321300427834
