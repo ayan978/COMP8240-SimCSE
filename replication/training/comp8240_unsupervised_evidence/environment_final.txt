@@ -1,0 +1,35 @@
+=== REPO ===
+49fa580a853752ede55b8c76d9debf748e214d3f
+=== ENVIRONMENT ===
+Python 3.8.20
+torch: 1.7.1+cu110
+transformers: 4.2.1
+datasets: 1.18.4
+numpy: 1.23.5
+scipy: 1.10.1
+CUDA runtime: 11.0
+GPU: NVIDIA A100-SXM4-80GB
+=== GPU ===
+Fri Nov  6 09:12:55 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.211.01             Driver Version: 570.211.01     CUDA Version: 12.8     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:C2:00.0 Off |                    0 |
+| N/A   37C    P0             60W /  275W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+=== DATA HASHES ===
+0747687ec3594fa449d2004fd3757a56c24bf5f7428976fb5b67176775a68d48  data/nli_for_simcse.csv
+7b1825863a99aa76479b0456f7c210539dfaeeb69598b41fb4de4f524dd5a706  data/wiki1m_for_simcse.txt
