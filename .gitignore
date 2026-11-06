@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Secrets
+.env
+*.key
+
+# Model checkpoints / large model files
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# Temporary files
+*.log
+*.tmp
+
+# Raw third-party datasets
+data/zhao_hu/raw/
+data/original/
