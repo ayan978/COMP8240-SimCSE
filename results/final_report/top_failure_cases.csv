@@ -1,0 +1,16 @@
+pair_id,category,sentence1,sentence2,gemini_score,simcse_cosine,diagnostic_gap
+176,negation,The bus arrived early.,The bus did not arrive early.,0.0,0.86539143,0.86539143
+23,negation,The door is open.,The door is not open.,0.0,0.8144053,0.8144053
+302,antonym_substitution,The temperature is increasing.,The temperature is decreasing.,0.0,0.80770594,0.80770594
+346,causal_relation_reversal,The collision caused the vehicle damage.,The vehicle damage caused the collision.,1.0,0.993333,0.7933330000000001
+64,causal_relation_reversal,The fire caused the alarm to activate.,The alarm caused the fire to activate.,1.0,0.99237275,0.79237275
+341,causal_relation_reversal,The medication caused the patient's drowsiness.,The patient's drowsiness caused the medication.,1.0,0.9894936,0.7894935999999999
+334,causal_relation_reversal,A lack of sleep caused her fatigue.,Her fatigue caused the lack of sleep.,1.0,0.9880386,0.7880385999999999
+316,antonym_substitution,The light became brighter.,The light became darker.,0.5,0.8802063,0.7802063
+281,antonym_substitution,The soup is warm.,The soup is cold.,0.5,0.87721735,0.77721735
+68,causal_relation_reversal,The earthquake caused the building to collapse.,The building collapse caused the earthquake.,1.0,0.97706383,0.7770638299999999
+348,causal_relation_reversal,The rainfall caused the soil to become wet.,The wet soil caused the rainfall.,1.0,0.97672725,0.77672725
+309,antonym_substitution,The patient is awake.,The patient is asleep.,0.0,0.7745179,0.7745179
+192,negation,The store opened at nine.,The store did not open at nine.,0.0,0.7719029,0.7719029
+188,negation,Henry passed the assessment.,Henry did not pass the assessment.,0.0,0.77171123,0.77171123
+364,high_lexical_overlap_different_meaning,The guard stopped the visitor.,The visitor stopped the guard.,1.0,0.971413,0.7714129999999999

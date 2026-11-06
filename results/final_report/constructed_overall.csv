@@ -1,0 +1,2 @@
+dataset,n,spearman,pearson,gemini_mean,simcse_cosine_mean
+Constructed controlled dataset,400,0.3924007693313687,0.49003213004278345,2.45875,0.83950635155
