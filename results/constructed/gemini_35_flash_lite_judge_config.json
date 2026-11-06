@@ -1,0 +1,22 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "temperature": 0,
+  "batch_size": 10,
+  "shuffle_seed": 8240,
+  "score_scale": [
+    0.0,
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0
+  ],
+  "category_shown_to_judge": false,
+  "expected_relation_shown_to_judge": false,
+  "instructions": "You are an independent judge of semantic textual similarity.\n\nFor EACH sentence pair, rate how similar the MEANING of the two sentences is.\n\nUse exactly one of these scores:\n0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0\n\nScoring anchors:\n5.0 = fully equivalent meaning\n4.0-4.5 = mostly equivalent, with only minor non-essential differences\n3.0-3.5 = substantial shared meaning, but an important detail differs\n2.0-2.5 = clearly related or lexically similar, but the core proposition,\n          semantic role, relation, entity, quantity, time, or polarity differs\n1.0-1.5 = only weakly related in meaning\n0.0-0.5 = essentially unrelated or strongly incompatible in meaning\n\nImportant:\n- Judge semantic meaning, not surface lexical overlap.\n- Pay attention to negation, who-did-what-to-whom, causal direction,\n  named entities, numbers, dates and antonyms.\n- Judge every pair independently.\n- Do not compare one pair with another.\n- Do not infer hidden dataset labels or categories.\n- Give a concise rationale for each score.\n"
+}
