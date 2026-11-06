@@ -1,0 +1,401 @@
+pair_id,sentence1,sentence2,category,expected_relation,human_similarity_score,notes,source
+1,The boy is riding a bicycle.,A boy is cycling.,paraphrase,meaning_preserved,4.5,,pilot_manual
+2,The woman purchased a new laptop.,The woman bought a new laptop.,paraphrase,meaning_preserved,5.0,,pilot_manual
+3,The meeting begins at nine o'clock.,The meeting starts at 9 AM.,paraphrase,meaning_preserved,5.0,,pilot_manual
+4,The dog is sleeping on the sofa.,A dog is asleep on the couch.,paraphrase,meaning_preserved,4.5,,pilot_manual
+5,She completed the assignment yesterday.,She finished the assignment yesterday.,paraphrase,meaning_preserved,5.0,,pilot_manual
+6,The restaurant is located near the station.,The restaurant is close to the station.,paraphrase,meaning_preserved,4.5,,pilot_manual
+7,He entered the room quietly.,He quietly walked into the room.,paraphrase,meaning_preserved,5.0,,pilot_manual
+8,The children are playing in the park.,Kids are playing at the park.,paraphrase,meaning_preserved,4.5,,pilot_manual
+9,The flight was cancelled because of bad weather.,Bad weather caused the flight to be cancelled.,paraphrase,meaning_preserved,5.0,,pilot_manual
+10,The company announced its results on Friday.,"On Friday, the company released its results.",paraphrase,meaning_preserved,4.5,,pilot_manual
+11,The movie was very good.,The movie was very enjoyable.,synonym_substitution,meaning_preserved,4.5,,pilot_manual
+12,The room was extremely small.,The room was extremely tiny.,synonym_substitution,meaning_preserved,5.0,,pilot_manual
+13,He gave a quick response.,He gave a rapid response.,synonym_substitution,meaning_preserved,5.0,,pilot_manual
+14,The task was difficult.,The task was challenging.,synonym_substitution,meaning_preserved,4.5,,pilot_manual
+15,She looked happy.,She looked joyful.,synonym_substitution,meaning_preserved,4.5,,pilot_manual
+16,The car is very fast.,The car is very quick.,synonym_substitution,meaning_preserved,4.5,,pilot_manual
+17,They live in a large house.,They live in a big house.,synonym_substitution,meaning_preserved,5.0,,pilot_manual
+18,The explanation was clear.,The explanation was understandable.,synonym_substitution,meaning_preserved,4.5,,pilot_manual
+19,She was afraid of the storm.,She was scared of the storm.,synonym_substitution,meaning_preserved,5.0,,pilot_manual
+20,The purchase was inexpensive.,The purchase was cheap.,synonym_substitution,meaning_preserved,4.5,,pilot_manual
+21,The train arrived on time.,The train did not arrive on time.,negation,meaning_changed,2.0,,pilot_manual
+22,She likes coffee.,She does not like coffee.,negation,meaning_changed,2.0,,pilot_manual
+23,The door is open.,The door is not open.,negation,meaning_changed,2.0,,pilot_manual
+24,He attended the meeting.,He did not attend the meeting.,negation,meaning_changed,2.0,,pilot_manual
+25,The experiment was successful.,The experiment was not successful.,negation,meaning_changed,2.0,,pilot_manual
+26,They approved the proposal.,They did not approve the proposal.,negation,meaning_changed,2.0,,pilot_manual
+27,The shop is closed.,The shop is not closed.,negation,meaning_changed,2.0,,pilot_manual
+28,The patient recovered.,The patient did not recover.,negation,meaning_changed,2.0,,pilot_manual
+29,The package arrived today.,The package did not arrive today.,negation,meaning_changed,2.0,,pilot_manual
+30,The answer is correct.,The answer is not correct.,negation,meaning_changed,2.0,,pilot_manual
+31,Alice travelled to Sydney.,Alice travelled to Melbourne.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+32,John works at Google.,John works at Microsoft.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+33,The conference was held in Paris.,The conference was held in London.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+34,Emma visited Japan last year.,Emma visited Korea last year.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+35,The match was played in Brisbane.,The match was played in Perth.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+36,David studies at Harvard University.,David studies at Stanford University.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+37,The company opened an office in Singapore.,The company opened an office in Tokyo.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+38,Michael met Sarah yesterday.,Michael met Jessica yesterday.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+39,The flight departed from Sydney Airport.,The flight departed from Melbourne Airport.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+40,The report was published by Reuters.,The report was published by Bloomberg.,named_entity_substitution,meaning_changed,3.5,,pilot_manual
+41,The meeting is on Monday.,The meeting is on Tuesday.,number_date_substitution,meaning_changed,3.5,,pilot_manual
+42,The flight leaves at 8 AM.,The flight leaves at 10 AM.,number_date_substitution,meaning_changed,3.5,,pilot_manual
+43,She bought three books.,She bought five books.,number_date_substitution,meaning_changed,3.5,,pilot_manual
+44,The building has twenty floors.,The building has thirty floors.,number_date_substitution,meaning_changed,3.5,,pilot_manual
+45,The event occurred in 2024.,The event occurred in 2025.,number_date_substitution,meaning_changed,3.5,,pilot_manual
+46,The ticket costs fifty dollars.,The ticket costs eighty dollars.,number_date_substitution,meaning_changed,3.0,,pilot_manual
+47,He scored 90 percent.,He scored 60 percent.,number_date_substitution,meaning_changed,3.0,,pilot_manual
+48,The journey takes two hours.,The journey takes four hours.,number_date_substitution,meaning_changed,3.0,,pilot_manual
+49,The class begins on 12 May.,The class begins on 15 May.,number_date_substitution,meaning_changed,3.5,,pilot_manual
+50,The company hired 100 employees.,The company hired 200 employees.,number_date_substitution,meaning_changed,3.0,,pilot_manual
+51,The water is hot.,The water is cold.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+52,The building is tall.,The building is short.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+53,The road is wide.,The road is narrow.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+54,The exam was easy.,The exam was difficult.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+55,The room was bright.,The room was dark.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+56,The car is expensive.,The car is cheap.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+57,The box is heavy.,The box is light.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+58,The process was fast.,The process was slow.,antonym_substitution,meaning_changed,2.5,,pilot_manual
+59,The answer is correct.,The answer is incorrect.,antonym_substitution,meaning_changed,2.0,,pilot_manual
+60,The result was positive.,The result was negative.,antonym_substitution,meaning_changed,2.0,,pilot_manual
+61,Rain caused flooding.,Flooding caused rain.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+62,The storm caused the power outage.,The power outage caused the storm.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+63,Smoking increases the risk of disease.,Disease increases the risk of smoking.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+64,The fire caused the alarm to activate.,The alarm caused the fire to activate.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+65,Heavy traffic caused the delay.,The delay caused heavy traffic.,causal_relation_reversal,meaning_changed,2.5,,pilot_manual
+66,The collision caused road congestion.,Road congestion caused the collision.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+67,The software bug caused the system failure.,The system failure caused the software bug.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+68,The earthquake caused the building to collapse.,The building collapse caused the earthquake.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+69,Low temperatures caused the water to freeze.,Frozen water caused the low temperatures.,causal_relation_reversal,meaning_changed,2.0,,pilot_manual
+70,The economic crisis caused unemployment to rise.,Rising unemployment caused the economic crisis.,causal_relation_reversal,meaning_changed,2.5,,pilot_manual
+71,The dog chased the cat.,The cat chased the dog.,high_lexical_overlap_different_meaning,meaning_changed,2.5,,pilot_manual
+72,Sarah called Emma.,Emma called Sarah.,high_lexical_overlap_different_meaning,meaning_changed,2.5,,pilot_manual
+73,The teacher praised the student.,The student praised the teacher.,high_lexical_overlap_different_meaning,meaning_changed,2.5,,pilot_manual
+74,The doctor examined the patient.,The patient examined the doctor.,high_lexical_overlap_different_meaning,meaning_changed,2.5,,pilot_manual
+75,The police arrested the thief.,The thief arrested the police.,high_lexical_overlap_different_meaning,meaning_changed,2.0,,pilot_manual
+76,The manager interviewed the applicant.,The applicant interviewed the manager.,high_lexical_overlap_different_meaning,meaning_changed,2.5,,pilot_manual
+77,The child followed the parent.,The parent followed the child.,high_lexical_overlap_different_meaning,meaning_changed,2.5,,pilot_manual
+78,Tom defeated Jack.,Jack defeated Tom.,high_lexical_overlap_different_meaning,meaning_changed,2.0,,pilot_manual
+79,The company acquired the startup.,The startup acquired the company.,high_lexical_overlap_different_meaning,meaning_changed,2.0,,pilot_manual
+80,The truck hit the car.,The car hit the truck.,high_lexical_overlap_different_meaning,meaning_changed,2.5,,pilot_manual
+81,Maria purchased a wireless keyboard.,Maria bought a wireless keyboard.,paraphrase,meaning_preserved,,,expanded_controlled
+82,Daniel purchased a train ticket.,Daniel bought a train ticket.,paraphrase,meaning_preserved,,,expanded_controlled
+83,Sophie purchased a winter coat.,Sophie bought a winter coat.,paraphrase,meaning_preserved,,,expanded_controlled
+84,James purchased a coffee machine.,James bought a coffee machine.,paraphrase,meaning_preserved,,,expanded_controlled
+85,Olivia purchased a concert ticket.,Olivia bought a concert ticket.,paraphrase,meaning_preserved,,,expanded_controlled
+86,The lecture begins at 10 AM.,The lecture starts at 10 AM.,paraphrase,meaning_preserved,,,expanded_controlled
+87,The workshop begins at 2 PM.,The workshop starts at 2 PM.,paraphrase,meaning_preserved,,,expanded_controlled
+88,The ceremony begins at 6 PM.,The ceremony starts at 6 PM.,paraphrase,meaning_preserved,,,expanded_controlled
+89,The interview begins at 11 AM.,The interview starts at 11 AM.,paraphrase,meaning_preserved,,,expanded_controlled
+90,The training session begins at 3 PM.,The training session starts at 3 PM.,paraphrase,meaning_preserved,,,expanded_controlled
+91,The hotel is located near the airport.,The hotel is close to the airport.,paraphrase,meaning_preserved,,,expanded_controlled
+92,The library is located near the university.,The library is close to the university.,paraphrase,meaning_preserved,,,expanded_controlled
+93,The cafe is located near the museum.,The cafe is close to the museum.,paraphrase,meaning_preserved,,,expanded_controlled
+94,The clinic is located near the shopping centre.,The clinic is close to the shopping centre.,paraphrase,meaning_preserved,,,expanded_controlled
+95,The stadium is located near the train station.,The stadium is close to the train station.,paraphrase,meaning_preserved,,,expanded_controlled
+96,Anna completed the report this morning.,Anna finished the report this morning.,paraphrase,meaning_preserved,,,expanded_controlled
+97,Peter completed the presentation last night.,Peter finished the presentation last night.,paraphrase,meaning_preserved,,,expanded_controlled
+98,Rachel completed the project on Monday.,Rachel finished the project on Monday.,paraphrase,meaning_preserved,,,expanded_controlled
+99,Thomas completed the application yesterday.,Thomas finished the application yesterday.,paraphrase,meaning_preserved,,,expanded_controlled
+100,Emily completed the survey this afternoon.,Emily finished the survey this afternoon.,paraphrase,meaning_preserved,,,expanded_controlled
+101,Mark entered the office quietly.,Mark quietly walked into the office.,paraphrase,meaning_preserved,,,expanded_controlled
+102,Laura entered the classroom quietly.,Laura quietly walked into the classroom.,paraphrase,meaning_preserved,,,expanded_controlled
+103,Henry entered the hall quietly.,Henry quietly walked into the hall.,paraphrase,meaning_preserved,,,expanded_controlled
+104,Nina entered the laboratory quietly.,Nina quietly walked into the laboratory.,paraphrase,meaning_preserved,,,expanded_controlled
+105,George entered the building quietly.,George quietly walked into the building.,paraphrase,meaning_preserved,,,expanded_controlled
+106,The outdoor concert was cancelled because of heavy rain.,Heavy rain caused the outdoor concert to be cancelled.,paraphrase,meaning_preserved,,,expanded_controlled
+107,The football match was cancelled because of a severe storm.,A severe storm caused the football match to be cancelled.,paraphrase,meaning_preserved,,,expanded_controlled
+108,The ferry service was cancelled because of strong winds.,Strong winds caused the ferry service to be cancelled.,paraphrase,meaning_preserved,,,expanded_controlled
+109,The school excursion was cancelled because of bad weather.,Bad weather caused the school excursion to be cancelled.,paraphrase,meaning_preserved,,,expanded_controlled
+110,The festival was cancelled because of flooding.,Flooding caused the festival to be cancelled.,paraphrase,meaning_preserved,,,expanded_controlled
+111,The students are playing in the courtyard.,The students are playing at the courtyard.,paraphrase,meaning_preserved,,,expanded_controlled
+112,The children are playing in the playground.,The children are playing at the playground.,paraphrase,meaning_preserved,,,expanded_controlled
+113,The friends are playing in the garden.,The friends are playing at the garden.,paraphrase,meaning_preserved,,,expanded_controlled
+114,The players are playing in the field.,The players are playing at the field.,paraphrase,meaning_preserved,,,expanded_controlled
+115,The tourists are playing in the beach.,The tourists are playing at the beach.,paraphrase,meaning_preserved,,,expanded_controlled
+116,The bank announced its quarterly results on Monday.,"On Monday, the bank released its quarterly results.",paraphrase,meaning_preserved,,,expanded_controlled
+117,The university announced its new policy on Tuesday.,"On Tuesday, the university released its new policy.",paraphrase,meaning_preserved,,,expanded_controlled
+118,The airline announced its new route on Wednesday.,"On Wednesday, the airline released its new route.",paraphrase,meaning_preserved,,,expanded_controlled
+119,The company announced its annual results on Thursday.,"On Thursday, the company released its annual results.",paraphrase,meaning_preserved,,,expanded_controlled
+120,The government agency announced its new guidelines on Friday.,"On Friday, the government agency released its new guidelines.",paraphrase,meaning_preserved,,,expanded_controlled
+121,The response was rapid.,The response was quick.,synonym_substitution,meaning_preserved,,,expanded_controlled
+122,The recovery was rapid.,The recovery was quick.,synonym_substitution,meaning_preserved,,,expanded_controlled
+123,The decision was rapid.,The decision was quick.,synonym_substitution,meaning_preserved,,,expanded_controlled
+124,The change was rapid.,The change was quick.,synonym_substitution,meaning_preserved,,,expanded_controlled
+125,The improvement was rapid.,The improvement was quick.,synonym_substitution,meaning_preserved,,,expanded_controlled
+126,The garden was large.,The garden was big.,synonym_substitution,meaning_preserved,,,expanded_controlled
+127,The office was large.,The office was big.,synonym_substitution,meaning_preserved,,,expanded_controlled
+128,The warehouse was large.,The warehouse was big.,synonym_substitution,meaning_preserved,,,expanded_controlled
+129,The kitchen was large.,The kitchen was big.,synonym_substitution,meaning_preserved,,,expanded_controlled
+130,The apartment was large.,The apartment was big.,synonym_substitution,meaning_preserved,,,expanded_controlled
+131,The exam was difficult.,The exam was challenging.,synonym_substitution,meaning_preserved,,,expanded_controlled
+132,The project was difficult.,The project was challenging.,synonym_substitution,meaning_preserved,,,expanded_controlled
+133,The problem was difficult.,The problem was challenging.,synonym_substitution,meaning_preserved,,,expanded_controlled
+134,The course was difficult.,The course was challenging.,synonym_substitution,meaning_preserved,,,expanded_controlled
+135,The assignment was difficult.,The assignment was challenging.,synonym_substitution,meaning_preserved,,,expanded_controlled
+136,The child looked happy.,The child looked joyful.,synonym_substitution,meaning_preserved,,,expanded_controlled
+137,The teacher looked happy.,The teacher looked joyful.,synonym_substitution,meaning_preserved,,,expanded_controlled
+138,The winner looked happy.,The winner looked joyful.,synonym_substitution,meaning_preserved,,,expanded_controlled
+139,The family looked happy.,The family looked joyful.,synonym_substitution,meaning_preserved,,,expanded_controlled
+140,The couple looked happy.,The couple looked joyful.,synonym_substitution,meaning_preserved,,,expanded_controlled
+141,The student looked afraid.,The student looked scared.,synonym_substitution,meaning_preserved,,,expanded_controlled
+142,The driver looked afraid.,The driver looked scared.,synonym_substitution,meaning_preserved,,,expanded_controlled
+143,The child looked afraid.,The child looked scared.,synonym_substitution,meaning_preserved,,,expanded_controlled
+144,The tourist looked afraid.,The tourist looked scared.,synonym_substitution,meaning_preserved,,,expanded_controlled
+145,The passenger looked afraid.,The passenger looked scared.,synonym_substitution,meaning_preserved,,,expanded_controlled
+146,The meal was inexpensive.,The meal was cheap.,synonym_substitution,meaning_preserved,,,expanded_controlled
+147,The ticket was inexpensive.,The ticket was cheap.,synonym_substitution,meaning_preserved,,,expanded_controlled
+148,The hotel was inexpensive.,The hotel was cheap.,synonym_substitution,meaning_preserved,,,expanded_controlled
+149,The phone was inexpensive.,The phone was cheap.,synonym_substitution,meaning_preserved,,,expanded_controlled
+150,The service was inexpensive.,The service was cheap.,synonym_substitution,meaning_preserved,,,expanded_controlled
+151,The instruction was clear.,The instruction was understandable.,synonym_substitution,meaning_preserved,,,expanded_controlled
+152,The message was clear.,The message was understandable.,synonym_substitution,meaning_preserved,,,expanded_controlled
+153,The guidance was clear.,The guidance was understandable.,synonym_substitution,meaning_preserved,,,expanded_controlled
+154,The answer was clear.,The answer was understandable.,synonym_substitution,meaning_preserved,,,expanded_controlled
+155,The description was clear.,The description was understandable.,synonym_substitution,meaning_preserved,,,expanded_controlled
+156,The room was silent.,The room was quiet.,synonym_substitution,meaning_preserved,,,expanded_controlled
+157,The library was silent.,The library was quiet.,synonym_substitution,meaning_preserved,,,expanded_controlled
+158,The street was silent.,The street was quiet.,synonym_substitution,meaning_preserved,,,expanded_controlled
+159,The office was silent.,The office was quiet.,synonym_substitution,meaning_preserved,,,expanded_controlled
+160,The hallway was silent.,The hallway was quiet.,synonym_substitution,meaning_preserved,,,expanded_controlled
+161,The document is available online.,The document is not available online.,negation,meaning_changed,,,expanded_controlled
+162,The room is available today.,The room is not available today.,negation,meaning_changed,,,expanded_controlled
+163,The product is available locally.,The product is not available locally.,negation,meaning_changed,,,expanded_controlled
+164,The service is available overnight.,The service is not available overnight.,negation,meaning_changed,,,expanded_controlled
+165,The course is available this semester.,The course is not available this semester.,negation,meaning_changed,,,expanded_controlled
+166,Sarah attended the workshop.,Sarah did not attend the workshop.,negation,meaning_changed,,,expanded_controlled
+167,Michael attended the lecture.,Michael did not attend the lecture.,negation,meaning_changed,,,expanded_controlled
+168,Emma attended the conference.,Emma did not attend the conference.,negation,meaning_changed,,,expanded_controlled
+169,David attended the ceremony.,David did not attend the ceremony.,negation,meaning_changed,,,expanded_controlled
+170,Lisa attended the interview.,Lisa did not attend the interview.,negation,meaning_changed,,,expanded_controlled
+171,The committee approved the budget.,The committee did not approve the budget.,negation,meaning_changed,,,expanded_controlled
+172,The board approved the merger.,The board did not approve the merger.,negation,meaning_changed,,,expanded_controlled
+173,The council approved the plan.,The council did not approve the plan.,negation,meaning_changed,,,expanded_controlled
+174,The manager approved the request.,The manager did not approve the request.,negation,meaning_changed,,,expanded_controlled
+175,The university approved the application.,The university did not approve the application.,negation,meaning_changed,,,expanded_controlled
+176,The bus arrived early.,The bus did not arrive early.,negation,meaning_changed,,,expanded_controlled
+177,The flight arrived yesterday.,The flight did not arrive yesterday.,negation,meaning_changed,,,expanded_controlled
+178,The parcel arrived safely.,The parcel did not arrive safely.,negation,meaning_changed,,,expanded_controlled
+179,The ambulance arrived quickly.,The ambulance did not arrive quickly.,negation,meaning_changed,,,expanded_controlled
+180,The shipment arrived this morning.,The shipment did not arrive this morning.,negation,meaning_changed,,,expanded_controlled
+181,The box contains the documents.,The box does not contain the documents.,negation,meaning_changed,,,expanded_controlled
+182,The report contains the results.,The report does not contain the results.,negation,meaning_changed,,,expanded_controlled
+183,The package contains a charger.,The package does not contain a charger.,negation,meaning_changed,,,expanded_controlled
+184,The file contains personal information.,The file does not contain personal information.,negation,meaning_changed,,,expanded_controlled
+185,The folder contains the images.,The folder does not contain the images.,negation,meaning_changed,,,expanded_controlled
+186,James passed the exam.,James did not pass the exam.,negation,meaning_changed,,,expanded_controlled
+187,Maria passed the driving test.,Maria did not pass the driving test.,negation,meaning_changed,,,expanded_controlled
+188,Henry passed the assessment.,Henry did not pass the assessment.,negation,meaning_changed,,,expanded_controlled
+189,Alice passed the final test.,Alice did not pass the final test.,negation,meaning_changed,,,expanded_controlled
+190,George passed the course.,George did not pass the course.,negation,meaning_changed,,,expanded_controlled
+191,The museum opened on Monday.,The museum did not open on Monday.,negation,meaning_changed,,,expanded_controlled
+192,The store opened at nine.,The store did not open at nine.,negation,meaning_changed,,,expanded_controlled
+193,The office opened yesterday.,The office did not open yesterday.,negation,meaning_changed,,,expanded_controlled
+194,The restaurant opened this week.,The restaurant did not open this week.,negation,meaning_changed,,,expanded_controlled
+195,The gate opened automatically.,The gate did not open automatically.,negation,meaning_changed,,,expanded_controlled
+196,The software supports offline access.,The software does not support offline access.,negation,meaning_changed,,,expanded_controlled
+197,The phone supports wireless charging.,The phone does not support wireless charging.,negation,meaning_changed,,,expanded_controlled
+198,The system supports multiple users.,The system does not support multiple users.,negation,meaning_changed,,,expanded_controlled
+199,The browser supports this feature.,The browser does not support this feature.,negation,meaning_changed,,,expanded_controlled
+200,The application supports dark mode.,The application does not support dark mode.,negation,meaning_changed,,,expanded_controlled
+201,Liam travelled to Adelaide.,Liam travelled to Darwin.,named_entity_substitution,meaning_changed,,,expanded_controlled
+202,Sophia travelled to Rome.,Sophia travelled to Madrid.,named_entity_substitution,meaning_changed,,,expanded_controlled
+203,Noah travelled to Toronto.,Noah travelled to Vancouver.,named_entity_substitution,meaning_changed,,,expanded_controlled
+204,Grace travelled to Berlin.,Grace travelled to Vienna.,named_entity_substitution,meaning_changed,,,expanded_controlled
+205,Ethan travelled to Auckland.,Ethan travelled to Wellington.,named_entity_substitution,meaning_changed,,,expanded_controlled
+206,Rachel works at Amazon.,Rachel works at Apple.,named_entity_substitution,meaning_changed,,,expanded_controlled
+207,Daniel works at IBM.,Daniel works at Oracle.,named_entity_substitution,meaning_changed,,,expanded_controlled
+208,Jessica works at Tesla.,Jessica works at Ford.,named_entity_substitution,meaning_changed,,,expanded_controlled
+209,Oliver works at Meta.,Oliver works at Netflix.,named_entity_substitution,meaning_changed,,,expanded_controlled
+210,Hannah works at Samsung.,Hannah works at Sony.,named_entity_substitution,meaning_changed,,,expanded_controlled
+211,Lucas studies at Oxford University.,Lucas studies at Cambridge University.,named_entity_substitution,meaning_changed,,,expanded_controlled
+212,Amelia studies at Yale University.,Amelia studies at Princeton University.,named_entity_substitution,meaning_changed,,,expanded_controlled
+213,Jack studies at Monash University.,Jack studies at the University of Melbourne.,named_entity_substitution,meaning_changed,,,expanded_controlled
+214,Mia studies at UNSW.,Mia studies at the University of Sydney.,named_entity_substitution,meaning_changed,,,expanded_controlled
+215,William studies at MIT.,William studies at Caltech.,named_entity_substitution,meaning_changed,,,expanded_controlled
+216,The article was published by CNN.,The article was published by BBC.,named_entity_substitution,meaning_changed,,,expanded_controlled
+217,The story was published by The Guardian.,The story was published by The Times.,named_entity_substitution,meaning_changed,,,expanded_controlled
+218,The report was published by ABC News.,The report was published by SBS News.,named_entity_substitution,meaning_changed,,,expanded_controlled
+219,The interview was published by Forbes.,The interview was published by Bloomberg.,named_entity_substitution,meaning_changed,,,expanded_controlled
+220,The investigation was published by Reuters.,The investigation was published by AP.,named_entity_substitution,meaning_changed,,,expanded_controlled
+221,The flight departed from Brisbane.,The flight departed from Adelaide.,named_entity_substitution,meaning_changed,,,expanded_controlled
+222,The flight departed from Dubai.,The flight departed from Doha.,named_entity_substitution,meaning_changed,,,expanded_controlled
+223,The flight departed from Singapore.,The flight departed from Bangkok.,named_entity_substitution,meaning_changed,,,expanded_controlled
+224,The flight departed from Los Angeles.,The flight departed from San Francisco.,named_entity_substitution,meaning_changed,,,expanded_controlled
+225,The flight departed from London.,The flight departed from Manchester.,named_entity_substitution,meaning_changed,,,expanded_controlled
+226,The summit was held in Geneva.,The summit was held in Brussels.,named_entity_substitution,meaning_changed,,,expanded_controlled
+227,The exhibition was held in New York.,The exhibition was held in Chicago.,named_entity_substitution,meaning_changed,,,expanded_controlled
+228,The ceremony was held in Canberra.,The ceremony was held in Sydney.,named_entity_substitution,meaning_changed,,,expanded_controlled
+229,The conference was held in Seoul.,The conference was held in Beijing.,named_entity_substitution,meaning_changed,,,expanded_controlled
+230,The workshop was held in Munich.,The workshop was held in Frankfurt.,named_entity_substitution,meaning_changed,,,expanded_controlled
+231,Emma visited Thailand last year.,Emma visited Vietnam last year.,named_entity_substitution,meaning_changed,,,expanded_controlled
+232,Jacob visited France last year.,Jacob visited Italy last year.,named_entity_substitution,meaning_changed,,,expanded_controlled
+233,Charlotte visited Canada last year.,Charlotte visited Mexico last year.,named_entity_substitution,meaning_changed,,,expanded_controlled
+234,Benjamin visited India last year.,Benjamin visited Nepal last year.,named_entity_substitution,meaning_changed,,,expanded_controlled
+235,Ella visited Norway last year.,Ella visited Sweden last year.,named_entity_substitution,meaning_changed,,,expanded_controlled
+236,Andrew met Olivia yesterday.,Andrew met Chloe yesterday.,named_entity_substitution,meaning_changed,,,expanded_controlled
+237,Sophie met Daniel yesterday.,Sophie met James yesterday.,named_entity_substitution,meaning_changed,,,expanded_controlled
+238,Henry met Alice yesterday.,Henry met Maria yesterday.,named_entity_substitution,meaning_changed,,,expanded_controlled
+239,Jack met Emma yesterday.,Jack met Sophia yesterday.,named_entity_substitution,meaning_changed,,,expanded_controlled
+240,Thomas met Rachel yesterday.,Thomas met Hannah yesterday.,named_entity_substitution,meaning_changed,,,expanded_controlled
+241,The appointment is on Wednesday.,The appointment is on Thursday.,number_date_substitution,meaning_changed,,,expanded_controlled
+242,The exam is on Friday.,The exam is on Saturday.,number_date_substitution,meaning_changed,,,expanded_controlled
+243,The ceremony is on Sunday.,The ceremony is on Monday.,number_date_substitution,meaning_changed,,,expanded_controlled
+244,The interview is on Tuesday.,The interview is on Thursday.,number_date_substitution,meaning_changed,,,expanded_controlled
+245,The workshop is on Thursday.,The workshop is on Friday.,number_date_substitution,meaning_changed,,,expanded_controlled
+246,The train leaves at 6 AM.,The train leaves at 9 AM.,number_date_substitution,meaning_changed,,,expanded_controlled
+247,The bus leaves at 7 AM.,The bus leaves at 11 AM.,number_date_substitution,meaning_changed,,,expanded_controlled
+248,The ferry leaves at 1 PM.,The ferry leaves at 4 PM.,number_date_substitution,meaning_changed,,,expanded_controlled
+249,The class starts at 8 AM.,The class starts at 10 AM.,number_date_substitution,meaning_changed,,,expanded_controlled
+250,The concert starts at 6 PM.,The concert starts at 8 PM.,number_date_substitution,meaning_changed,,,expanded_controlled
+251,She bought four notebooks.,She bought seven notebooks.,number_date_substitution,meaning_changed,,,expanded_controlled
+252,He ordered two pizzas.,He ordered six pizzas.,number_date_substitution,meaning_changed,,,expanded_controlled
+253,They purchased five chairs.,They purchased nine chairs.,number_date_substitution,meaning_changed,,,expanded_controlled
+254,The teacher collected eight assignments.,The teacher collected twelve assignments.,number_date_substitution,meaning_changed,,,expanded_controlled
+255,The shop sold ten bicycles.,The shop sold fifteen bicycles.,number_date_substitution,meaning_changed,,,expanded_controlled
+256,The tower has fifteen floors.,The tower has twenty-five floors.,number_date_substitution,meaning_changed,,,expanded_controlled
+257,The hotel has twelve floors.,The hotel has eighteen floors.,number_date_substitution,meaning_changed,,,expanded_controlled
+258,The office has eight floors.,The office has sixteen floors.,number_date_substitution,meaning_changed,,,expanded_controlled
+259,The hospital has ten floors.,The hospital has fourteen floors.,number_date_substitution,meaning_changed,,,expanded_controlled
+260,The apartment block has six floors.,The apartment block has eleven floors.,number_date_substitution,meaning_changed,,,expanded_controlled
+261,The agreement was signed in 2021.,The agreement was signed in 2023.,number_date_substitution,meaning_changed,,,expanded_controlled
+262,The bridge opened in 2018.,The bridge opened in 2020.,number_date_substitution,meaning_changed,,,expanded_controlled
+263,The company was founded in 2005.,The company was founded in 2010.,number_date_substitution,meaning_changed,,,expanded_controlled
+264,The study was published in 2019.,The study was published in 2022.,number_date_substitution,meaning_changed,,,expanded_controlled
+265,The building was completed in 2016.,The building was completed in 2021.,number_date_substitution,meaning_changed,,,expanded_controlled
+266,The meal costs thirty dollars.,The meal costs sixty dollars.,number_date_substitution,meaning_changed,,,expanded_controlled
+267,The pass costs forty dollars.,The pass costs seventy dollars.,number_date_substitution,meaning_changed,,,expanded_controlled
+268,The jacket costs eighty dollars.,The jacket costs one hundred dollars.,number_date_substitution,meaning_changed,,,expanded_controlled
+269,The course costs five hundred dollars.,The course costs eight hundred dollars.,number_date_substitution,meaning_changed,,,expanded_controlled
+270,The phone costs six hundred dollars.,The phone costs nine hundred dollars.,number_date_substitution,meaning_changed,,,expanded_controlled
+271,She scored 85 percent.,She scored 65 percent.,number_date_substitution,meaning_changed,,,expanded_controlled
+272,He scored 72 percent.,He scored 92 percent.,number_date_substitution,meaning_changed,,,expanded_controlled
+273,The team achieved 80 percent.,The team achieved 50 percent.,number_date_substitution,meaning_changed,,,expanded_controlled
+274,The student scored 95 percent.,The student scored 75 percent.,number_date_substitution,meaning_changed,,,expanded_controlled
+275,The model achieved 88 percent.,The model achieved 68 percent.,number_date_substitution,meaning_changed,,,expanded_controlled
+276,The trip takes three hours.,The trip takes six hours.,number_date_substitution,meaning_changed,,,expanded_controlled
+277,The flight takes seven hours.,The flight takes ten hours.,number_date_substitution,meaning_changed,,,expanded_controlled
+278,The hike takes four hours.,The hike takes eight hours.,number_date_substitution,meaning_changed,,,expanded_controlled
+279,The procedure takes one hour.,The procedure takes three hours.,number_date_substitution,meaning_changed,,,expanded_controlled
+280,The journey takes five hours.,The journey takes nine hours.,number_date_substitution,meaning_changed,,,expanded_controlled
+281,The soup is warm.,The soup is cold.,antonym_substitution,meaning_changed,,,expanded_controlled
+282,The coffee is hot.,The coffee is cold.,antonym_substitution,meaning_changed,,,expanded_controlled
+283,The surface is smooth.,The surface is rough.,antonym_substitution,meaning_changed,,,expanded_controlled
+284,The corridor is wide.,The corridor is narrow.,antonym_substitution,meaning_changed,,,expanded_controlled
+285,The ceiling is high.,The ceiling is low.,antonym_substitution,meaning_changed,,,expanded_controlled
+286,The bag is heavy.,The bag is light.,antonym_substitution,meaning_changed,,,expanded_controlled
+287,The fabric is soft.,The fabric is hard.,antonym_substitution,meaning_changed,,,expanded_controlled
+288,The street is busy.,The street is quiet.,antonym_substitution,meaning_changed,,,expanded_controlled
+289,The room is clean.,The room is dirty.,antonym_substitution,meaning_changed,,,expanded_controlled
+290,The chair is comfortable.,The chair is uncomfortable.,antonym_substitution,meaning_changed,,,expanded_controlled
+291,The lecture was interesting.,The lecture was boring.,antonym_substitution,meaning_changed,,,expanded_controlled
+292,The instructions were simple.,The instructions were complicated.,antonym_substitution,meaning_changed,,,expanded_controlled
+293,The solution was correct.,The solution was incorrect.,antonym_substitution,meaning_changed,,,expanded_controlled
+294,The outcome was positive.,The outcome was negative.,antonym_substitution,meaning_changed,,,expanded_controlled
+295,The service was excellent.,The service was terrible.,antonym_substitution,meaning_changed,,,expanded_controlled
+296,The journey was short.,The journey was long.,antonym_substitution,meaning_changed,,,expanded_controlled
+297,The response was fast.,The response was slow.,antonym_substitution,meaning_changed,,,expanded_controlled
+298,The task was easy.,The task was difficult.,antonym_substitution,meaning_changed,,,expanded_controlled
+299,The building was old.,The building was new.,antonym_substitution,meaning_changed,,,expanded_controlled
+300,The container was full.,The container was empty.,antonym_substitution,meaning_changed,,,expanded_controlled
+301,The market is rising.,The market is falling.,antonym_substitution,meaning_changed,,,expanded_controlled
+302,The temperature is increasing.,The temperature is decreasing.,antonym_substitution,meaning_changed,,,expanded_controlled
+303,The door is open.,The door is closed.,antonym_substitution,meaning_changed,,,expanded_controlled
+304,The machine is active.,The machine is inactive.,antonym_substitution,meaning_changed,,,expanded_controlled
+305,The account is enabled.,The account is disabled.,antonym_substitution,meaning_changed,,,expanded_controlled
+306,The path is safe.,The path is dangerous.,antonym_substitution,meaning_changed,,,expanded_controlled
+307,The device is connected.,The device is disconnected.,antonym_substitution,meaning_changed,,,expanded_controlled
+308,The answer is true.,The answer is false.,antonym_substitution,meaning_changed,,,expanded_controlled
+309,The patient is awake.,The patient is asleep.,antonym_substitution,meaning_changed,,,expanded_controlled
+310,The signal is strong.,The signal is weak.,antonym_substitution,meaning_changed,,,expanded_controlled
+311,The company reported a profit.,The company reported a loss.,antonym_substitution,meaning_changed,,,expanded_controlled
+312,Demand increased sharply.,Demand decreased sharply.,antonym_substitution,meaning_changed,,,expanded_controlled
+313,The population grew rapidly.,The population declined rapidly.,antonym_substitution,meaning_changed,,,expanded_controlled
+314,The team won the match.,The team lost the match.,antonym_substitution,meaning_changed,,,expanded_controlled
+315,The price rose yesterday.,The price fell yesterday.,antonym_substitution,meaning_changed,,,expanded_controlled
+316,The light became brighter.,The light became darker.,antonym_substitution,meaning_changed,,,expanded_controlled
+317,The road became wider.,The road became narrower.,antonym_substitution,meaning_changed,,,expanded_controlled
+318,The queue became longer.,The queue became shorter.,antonym_substitution,meaning_changed,,,expanded_controlled
+319,The situation improved.,The situation worsened.,antonym_substitution,meaning_changed,,,expanded_controlled
+320,The noise became louder.,The noise became quieter.,antonym_substitution,meaning_changed,,,expanded_controlled
+321,Heavy rainfall caused the river to overflow.,The overflowing river caused the heavy rainfall.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+322,A power surge caused the computer to shut down.,The computer shutdown caused the power surge.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+323,The drought caused crop production to decline.,Declining crop production caused the drought.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+324,The accident caused traffic to stop.,Stopped traffic caused the accident.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+325,High demand caused prices to increase.,Higher prices caused the high demand.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+326,The infection caused the patient's fever.,The patient's fever caused the infection.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+327,The broken pipe caused the floor to flood.,The flooded floor caused the pipe to break.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+328,Strong winds caused the tree to fall.,The fallen tree caused the strong winds.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+329,The battery failure caused the device to turn off.,The device turning off caused the battery failure.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+330,The road closure caused a long delay.,The long delay caused the road closure.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+331,The software update caused the application to restart.,The application restart caused the software update.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+332,Heavy snow caused the airport to close.,The airport closure caused the heavy snow.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+333,The engine failure caused the vehicle to stop.,The stopped vehicle caused the engine failure.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+334,A lack of sleep caused her fatigue.,Her fatigue caused the lack of sleep.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+335,The damaged cable caused the network outage.,The network outage caused the cable damage.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+336,Poor visibility caused the flight delay.,The flight delay caused the poor visibility.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+337,The heat caused the ice to melt.,The melting ice caused the heat.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+338,The alarm caused the building to be evacuated.,The evacuation caused the alarm.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+339,A technical fault caused the train cancellation.,The train cancellation caused the technical fault.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+340,Heavy rain caused the match to be postponed.,The postponed match caused the heavy rain.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+341,The medication caused the patient's drowsiness.,The patient's drowsiness caused the medication.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+342,The shortage caused food prices to rise.,Rising food prices caused the shortage.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+343,The storm caused several flights to be cancelled.,The cancelled flights caused the storm.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+344,The fire caused smoke to fill the room.,The smoke-filled room caused the fire.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+345,Low demand caused production to decrease.,Lower production caused the low demand.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+346,The collision caused the vehicle damage.,The vehicle damage caused the collision.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+347,The new policy caused operating costs to fall.,Lower operating costs caused the new policy.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+348,The rainfall caused the soil to become wet.,The wet soil caused the rainfall.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+349,The earthquake caused several roads to crack.,The cracked roads caused the earthquake.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+350,The outage caused the website to become unavailable.,The unavailable website caused the outage.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+351,The cold weather caused the lake to freeze.,The frozen lake caused the cold weather.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+352,The faulty sensor caused the warning light to activate.,The warning light caused the sensor fault.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+353,The strike caused the factory to close.,The factory closure caused the strike.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+354,The leak caused water pressure to drop.,Low water pressure caused the leak.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+355,The recession caused unemployment to increase.,Higher unemployment caused the recession.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+356,The explosion caused nearby windows to break.,The broken windows caused the explosion.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+357,The illness caused him to miss work.,Missing work caused his illness.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+358,The construction work caused traffic congestion.,Traffic congestion caused the construction work.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+359,The server failure caused the service interruption.,The service interruption caused the server failure.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+360,The temperature drop caused frost to form.,The frost caused the temperature to drop.,causal_relation_reversal,meaning_changed,,,expanded_controlled
+361,The lawyer questioned the witness.,The witness questioned the lawyer.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+362,The journalist interviewed the actor.,The actor interviewed the journalist.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+363,The nurse helped the patient.,The patient helped the nurse.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+364,The guard stopped the visitor.,The visitor stopped the guard.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+365,The chef thanked the waiter.,The waiter thanked the chef.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+366,The coach congratulated the player.,The player congratulated the coach.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+367,The officer warned the driver.,The driver warned the officer.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+368,The student corrected the teacher.,The teacher corrected the student.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+369,The customer called the manager.,The manager called the customer.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+370,The editor contacted the writer.,The writer contacted the editor.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+371,The lion chased the zebra.,The zebra chased the lion.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+372,The cat followed the bird.,The bird followed the cat.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+373,The horse kicked the farmer.,The farmer kicked the horse.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+374,The dog frightened the child.,The child frightened the dog.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+375,The bee stung the gardener.,The gardener stung the bee.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+376,Alice invited Robert.,Robert invited Alice.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+377,Emily thanked Daniel.,Daniel thanked Emily.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+378,James called Sophia.,Sophia called James.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+379,Michael greeted Hannah.,Hannah greeted Michael.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+380,Olivia followed Ethan.,Ethan followed Olivia.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+381,The bus hit the bicycle.,The bicycle hit the bus.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+382,The motorcycle passed the truck.,The truck passed the motorcycle.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+383,The train struck the car.,The car struck the train.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+384,The taxi followed the van.,The van followed the taxi.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+385,The boat approached the ship.,The ship approached the boat.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+386,The university funded the laboratory.,The laboratory funded the university.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+387,The bank acquired the company.,The company acquired the bank.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+388,The supplier contacted the retailer.,The retailer contacted the supplier.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+389,The agency hired the consultant.,The consultant hired the agency.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+390,The publisher sued the author.,The author sued the publisher.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+391,The prosecutor accused the defendant.,The defendant accused the prosecutor.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+392,The judge questioned the lawyer.,The lawyer questioned the judge.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+393,The employer promoted the employee.,The employee promoted the employer.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+394,The parent praised the child.,The child praised the parent.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+395,The doctor advised the patient.,The patient advised the doctor.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+396,The researcher cited the professor.,The professor cited the researcher.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+397,The director criticised the actor.,The actor criticised the director.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+398,The buyer paid the seller.,The seller paid the buyer.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+399,The landlord contacted the tenant.,The tenant contacted the landlord.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
+400,The company hired the engineer.,The engineer hired the company.,high_lexical_overlap_different_meaning,meaning_changed,,,expanded_controlled
