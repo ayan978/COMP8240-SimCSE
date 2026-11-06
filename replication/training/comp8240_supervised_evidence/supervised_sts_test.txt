@@ -1,0 +1,96 @@
+Some weights of BertModel were not initialized from the model checkpoint at result/sup-simcse-bert-base-uncased-reproduction and are newly initialized: ['bert.pooler.dense.weight', 'bert.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2026-11-06 09:07:47,566 : ***** Transfer task : STS12 *****
+
+
+2026-11-06 09:07:48,034 : MSRpar : pearson = 0.6159, spearman = 0.6275
+2026-11-06 09:07:48,252 : MSRvid : pearson = 0.9199, spearman = 0.9240
+2026-11-06 09:07:48,416 : SMTeuroparl : pearson = 0.4826, spearman = 0.5762
+2026-11-06 09:07:48,691 : surprise.OnWN : pearson = 0.7601, spearman = 0.7166
+2026-11-06 09:07:48,851 : surprise.SMTnews : pearson = 0.7175, spearman = 0.6054
+2026-11-06 09:07:48,853 : ALL : Pearson = 0.8469,             Spearman = 0.7767
+2026-11-06 09:07:48,853 : ALL (weighted average) : Pearson = 0.7174,             Spearman = 0.7101
+2026-11-06 09:07:48,853 : ALL (average) : Pearson = 0.6992,             Spearman = 0.6900
+
+2026-11-06 09:07:48,856 : ***** Transfer task : STS13 (-SMT) *****
+
+
+2026-11-06 09:07:48,974 : FNWN : pearson = 0.5791, spearman = 0.5777
+2026-11-06 09:07:49,201 : headlines : pearson = 0.8010, spearman = 0.8230
+2026-11-06 09:07:49,386 : OnWN : pearson = 0.8409, spearman = 0.8467
+2026-11-06 09:07:49,387 : ALL : Pearson = 0.7792,             Spearman = 0.8155
+2026-11-06 09:07:49,387 : ALL (weighted average) : Pearson = 0.7880,             Spearman = 0.8009
+2026-11-06 09:07:49,387 : ALL (average) : Pearson = 0.7404,             Spearman = 0.7491
+
+2026-11-06 09:07:49,389 : ***** Transfer task : STS14 *****
+
+
+2026-11-06 09:07:49,698 : deft-forum : pearson = 0.6505, spearman = 0.6459
+2026-11-06 09:07:49,842 : deft-news : pearson = 0.8300, spearman = 0.8112
+2026-11-06 09:07:50,085 : headlines : pearson = 0.8054, spearman = 0.8017
+2026-11-06 09:07:50,313 : images : pearson = 0.8803, spearman = 0.8583
+2026-11-06 09:07:50,579 : OnWN : pearson = 0.8562, spearman = 0.8655
+2026-11-06 09:07:50,856 : tweet-news : pearson = 0.8175, spearman = 0.7595
+2026-11-06 09:07:50,858 : ALL : Pearson = 0.7871,             Spearman = 0.7948
+2026-11-06 09:07:50,858 : ALL (weighted average) : Pearson = 0.8164,             Spearman = 0.7994
+2026-11-06 09:07:50,858 : ALL (average) : Pearson = 0.8067,             Spearman = 0.7904
+
+2026-11-06 09:07:50,861 : ***** Transfer task : STS15 *****
+
+
+2026-11-06 09:07:51,056 : answers-forums : pearson = 0.7159, spearman = 0.7163
+2026-11-06 09:07:51,294 : answers-students : pearson = 0.7571, spearman = 0.7665
+2026-11-06 09:07:51,470 : belief : pearson = 0.8436, spearman = 0.8587
+2026-11-06 09:07:51,719 : headlines : pearson = 0.8312, spearman = 0.8555
+2026-11-06 09:07:51,950 : images : pearson = 0.9212, spearman = 0.9296
+2026-11-06 09:07:51,952 : ALL : Pearson = 0.8353,             Spearman = 0.8530
+2026-11-06 09:07:51,952 : ALL (weighted average) : Pearson = 0.8223,             Spearman = 0.8348
+2026-11-06 09:07:51,952 : ALL (average) : Pearson = 0.8138,             Spearman = 0.8253
+
+2026-11-06 09:07:51,954 : ***** Transfer task : STS16 *****
+
+
+2026-11-06 09:07:52,080 : answer-answer : pearson = 0.7680, spearman = 0.7685
+2026-11-06 09:07:52,162 : headlines : pearson = 0.7978, spearman = 0.8406
+2026-11-06 09:07:52,244 : plagiarism : pearson = 0.8400, spearman = 0.8690
+2026-11-06 09:07:52,373 : postediting : pearson = 0.8511, spearman = 0.8867
+2026-11-06 09:07:52,441 : question-question : pearson = 0.7387, spearman = 0.7543
+2026-11-06 09:07:52,443 : ALL : Pearson = 0.7907,             Spearman = 0.8217
+2026-11-06 09:07:52,443 : ALL (weighted average) : Pearson = 0.8002,             Spearman = 0.8249
+2026-11-06 09:07:52,443 : ALL (average) : Pearson = 0.7991,             Spearman = 0.8238
+
+2026-11-06 09:07:52,445 : 
+
+***** Transfer task : STSBenchmark*****
+
+
+2026-11-06 09:07:54,759 : train : pearson = 0.8196, spearman = 0.8259
+2026-11-06 09:07:55,398 : dev : pearson = 0.8402, spearman = 0.8553
+2026-11-06 09:07:55,931 : test : pearson = 0.7977, spearman = 0.8264
+2026-11-06 09:07:55,935 : ALL : Pearson = 0.8211,             Spearman = 0.8333
+2026-11-06 09:07:55,935 : ALL (weighted average) : Pearson = 0.8197,             Spearman = 0.8311
+2026-11-06 09:07:55,935 : ALL (average) : Pearson = 0.8192,             Spearman = 0.8359
+
+2026-11-06 09:07:55,940 : 
+
+***** Transfer task : SICKRelatedness*****
+
+
+2026-11-06 09:07:57,461 : train : pearson = 0.8478, spearman = 0.8008
+2026-11-06 09:07:57,650 : dev : pearson = 0.8385, spearman = 0.8101
+2026-11-06 09:07:59,274 : test : pearson = 0.8411, spearman = 0.7960
+2026-11-06 09:07:59,279 : ALL : Pearson = 0.8441,             Spearman = 0.7989
+2026-11-06 09:07:59,279 : ALL (weighted average) : Pearson = 0.8440,             Spearman = 0.7989
+2026-11-06 09:07:59,279 : ALL (average) : Pearson = 0.8425,             Spearman = 0.8023
+
+------ test ------
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| STS12 | STS13 | STS14 | STS15 | STS16 | STSBenchmark | SICKRelatedness |  Avg. |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
+| 77.67 | 81.55 | 79.48 | 85.30 | 82.17 |    82.64     |      79.60      | 81.20 |
++-------+-------+-------+-------+-------+--------------+-----------------+-------+
++------+------+------+------+------+------+------+------+
+|  MR  |  CR  | SUBJ | MPQA | SST2 | TREC | MRPC | Avg. |
++------+------+------+------+------+------+------+------+
+| 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
++------+------+------+------+------+------+------+------+
